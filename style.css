@@ -1,0 +1,67 @@
+.block1 {
+  width: 100px;
+  height: 20px;
+  border: 1px solid black;
+  -webkit-transition: margin ease-in 2s;
+  transition: margin ease-in 2s;
+}
+
+.block2 {
+  width: 100px;
+  height: 20px;
+  border: 1px solid black;
+  -webkit-transition: -webkit-transform cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+  transition: -webkit-transform cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+  transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+  transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 2s, -webkit-transform cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+}
+
+.wrapper:hover .block2 {
+  -webkit-transform: rotate(180deg) translate(20px, 20px);
+          transform: rotate(180deg) translate(20px, 20px);
+}
+
+.block3 {
+  width: 100px;
+  height: 20px;
+  border: 1px solid black;
+  -webkit-transition: -webkit-transform cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+  transition: -webkit-transform cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+  transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+  transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 2s, -webkit-transform cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+}
+
+.wrapper:hover .block3 {
+  -webkit-transform: translate(20px, 20px) rotate(180deg);
+          transform: translate(20px, 20px) rotate(180deg);
+}
+
+.block4 {
+  width: 100px;
+  height: 20px;
+  border: 1px solid black;
+  -webkit-transition: -webkit-transform ease 2s;
+  transition: -webkit-transform ease 2s;
+  transition: transform ease 2s;
+  transition: transform ease 2s, -webkit-transform ease 2s;
+}
+
+.wrapper:hover .block4 {
+  -webkit-transform: translateX(200px) skew(-25deg);
+          transform: translateX(200px) skew(-25deg);
+  -webkit-transition: -webkit-transform cubic-bezier(0.06, 0.38, 0.85, 1.38) 2s;
+  transition: -webkit-transform cubic-bezier(0.06, 0.38, 0.85, 1.38) 2s;
+  transition: transform cubic-bezier(0.06, 0.38, 0.85, 1.38) 2s;
+  transition: transform cubic-bezier(0.06, 0.38, 0.85, 1.38) 2s, -webkit-transform cubic-bezier(0.06, 0.38, 0.85, 1.38) 2s;
+}
+
+.wrapper {
+  width: 300px;
+  height: 80px;
+  border: 1px solid black;
+}
+
+.wrapper:hover .block1 {
+  margin-left: 200px;
+}
+/*# sourceMappingURL=style.css.map */
