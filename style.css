@@ -64,4 +64,17 @@
 .wrapper:hover .block1 {
   margin-left: 200px;
 }
+
+.img {
+  width: 400px;
+  -webkit-transition: -webkit-filter 1s;
+  transition: -webkit-filter 1s;
+  transition: filter 1s;
+  transition: filter 1s, -webkit-filter 1s;
+}
+
+.img:hover {
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
+}
 /*# sourceMappingURL=style.css.map */

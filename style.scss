@@ -36,7 +36,7 @@
 
 .wrapper:hover .block4 {
     transform: translateX(200px) skew(-25deg);
-    transition: transform cubic-bezier(.06,.38,.85,1.38) 2s;
+    transition: transform cubic-bezier(0.06, 0.38, 0.85, 1.38) 2s;
 }
 
 .wrapper {
@@ -47,4 +47,12 @@
 
 .wrapper:hover .block1 {
     margin-left: 200px;
+}
+
+.img {
+    width: 400px;
+    transition: filter 1s;
+    &:hover {
+        filter: brightness(40%);
+    }
 }
